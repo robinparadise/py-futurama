@@ -46,7 +46,7 @@ futurama.episode(3, 5)
 Output: "Amazon Women in the Mood"
 ```
 
-3. **(3pts) Crea la clase Character que tenga los siguientes métodos:**
+3. **(3pts) Crea la clase `Character que tenga los siguientes métodos:**
     - `__init__(self, info)`: El constructor debe de recibir el nombre del personaje.
     - `__str__(self)`: Debe de retornar el nombre del personaje.
     - `__len__(self)`: Debe de retornar la cantidad de letras del nombre del personaje.
