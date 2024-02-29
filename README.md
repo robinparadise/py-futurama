@@ -67,9 +67,10 @@ print(character + Character(characters[1])) # Output: "Philip J. FryMorgan Proct
 ```
 
 **Notas:**
-- Puedes usar la librería `requests` para hacer las peticiones a la API.
+- Usa la librería `requests` para hacer las peticiones a la API.
 - No olvides manejar los errores en caso de que el endpoint no responda.
 - No olvides de imprimir los resultados para comprobar que tu código es correcto.
+- Deja las líneas que imprime (`print`) los resultados en el código.
 - Revisa los nombres de los métodos y parámetros que debes de usar.
 - El archivo debe de ejecutar sin errores.
 - No olvides de subir el archivo a github o enviarlo al correo: `rgiles@metrodoraeducation.com`
