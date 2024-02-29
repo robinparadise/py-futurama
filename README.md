@@ -16,7 +16,7 @@ print(data)
 ```
 
 
-1. **(2.5pts) Crea una función que muestre una lista de personajes de futurama. La función debe de llamarse `characters(limit)`. Y debe de recibir un parámetro `limit` que por defecto sea `500`. La lista debe consistir solo con los nombres de los personajes. Si el parámetro `limit` es mayor que la cantidad de personajes, la función debe de retornar todos los personajes. Si el parámetro `limit` es menor que 0, la función debe de retornar los últimos `limit` personajes.**
+1. **(2.5pts) Crea una función que muestre una lista de personajes de futurama. La función debe de llamarse `characters(limit)`. Y debe de recibir un parámetro `limit` que por defecto sea `500`. El retorno de la lista debe consistir solo en los nombres de los personajes y debe de ser una lista de python. Si el parámetro `limit` es mayor que la cantidad de personajes, la función debe de retornar todos los personajes. Si el parámetro `limit` es menor que 0, la función debe de retornar los últimos `limit` personajes.**
 
 
 Ejemplo:
@@ -35,7 +35,10 @@ Output: ["Morbo", "Mom", "Mildred Fry", ...]
 
 
 1. **(2.5pts) Crea una clase llamada `Futurama` que tenga los siguientes métodos:**
-    - `characters(limit)`. La clase debe guardar los personajes en una lista y retornar la lista de personajes. La lista debe consistir solo con los nombres de los personajes. Si el parámetro `limit` es mayor que la cantidad de personajes, la función debe de retornar todos los personajes. Si el parámetro `limit` es menor que 0, la función debe de retornar los últimos `limit` personajes.
+    - `characters(limit)`. La clase debe guardar los personajes en una lista (por ejemplo `self.items`) y retornar la lista de personajes. El retorno de la lista debe consistir solo en los nombres de los personajes y debe de ser una lista de python. Si el parámetro `limit` es mayor que la cantidad de personajes, la función debe de retornar todos los personajes. Si el parámetro `limit` es menor que 0, la función debe de retornar los últimos `limit` personajes.
+    - La clase debe de usar un método `__init__` que inicialice la lista de personajes con datos vacíos `[]`.
+    - La clase debe de user el atributo `self.url` que tenga el valor `"https://futurama-dam.web.app/api/v3"`.
+
 
 
 2. **(2pts) Crea un método dentro de la clase `Futurama` que muestre el `nombre del episodio` que se pasa por parámetro a la función. La función debe de llamarse `episode(season, episode)`**. Usa el endpoint `/api/v3/seasons` para obtener el nombre del episodio. 
@@ -55,18 +58,24 @@ Output: "Amazon Women in the Mood"
     - `__gt__(self, other)`: Debe de retornar `True` si el nombre del personaje es mayor al nombre del personaje que se pasa por parámetro.
 
 Ejemplo:
+
 ```python
 api = Futurama()
-characters = api.characters(10)
-character = Character(characters[0])
-print(character) # Output: "Philip J. Fry"
-print(len(character)) # Output: 13
-print(character + Character(characters[1])) # Output: "Philip J. FryMorgan Proctor"
+characters = # get All characters
+character1 = Character(characters[0])
+character2 = Character(characters[1])
+
+print(character1) # Output: "Philip J. Fry"
+print("len =>", len(character1)) # Output: 13
+print("add =>", character1 + character2) # Output: "Philip J. FryMorgan Proctor"
+print("eq  =>", character1 == character2) # Output: False
 ...
 
 ```
 
 **Notas:**
+- Conteste en el orden que considere más conveniente.
+- Siga las indicaciones marcadas en los enunciados.
 - Usa la librería `requests` para hacer las peticiones a la API.
 - No olvides manejar los errores en caso de que el endpoint no responda.
 - No olvides de imprimir los resultados para comprobar que tu código es correcto.
