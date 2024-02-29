@@ -2,7 +2,7 @@
 
 API de futurama doc endpoint: [https://futurama-dam.web.app/dam2](https://futurama-dam.web.app/dam2)
 
-## Parte 1: `futurama.py` (4pts)
+## Parte 1: `futurama.py`
 
 ### Ejemplo de uso de la API
 
